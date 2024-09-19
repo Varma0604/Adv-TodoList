@@ -1,0 +1,120 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f5f7; /* Light background for vintage feel */
+  color: #000000; /* Dark text for readability */
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* White background for a clean look */
+  border: 1px solid #e0e0e0; /* Light border */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5em; /* Larger font size for emphasis */
+  margin: 0;
+  font-weight: 500; /* Medium weight for a soft look */
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(0, 123, 255, 0.15); /* Soft hover effect */
+}
+
+.light {
+  background-color: #f5f5f7;
+  color: #000000;
+}
+
+.dark {
+  background-color: #333;
+  color: #000000;
+}
+
+.input-section, .filter-section {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"], input[type="date"], select {
+  padding: 12px;
+  border: 1px solid #dcdcdc; /* Softer border */
+  border-radius: 8px;
+  margin-right: 10px;
+  flex-grow: 1;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+  border-color: #007bff; /* Blue highlight on focus */
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 12px;
+  border: 1px solid #e0e0e0; /* Light border for items */
+  border-radius: 8px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: rgba(0, 123, 255, 0.05); /* Soft hover effect */
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: rgb(0, 0, 0); /* Gray text for completed items */
+}
+
+#stats {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #070202; /* Softer text color */
+}
+
+@media (max-width: 600px) {
+  .input-section, .filter-section {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  input[type="text"], input[type="date"], select, button {
+      margin: 5px 0;
+  }
+
+  button {
+      width: 100%;
+  }
+}
